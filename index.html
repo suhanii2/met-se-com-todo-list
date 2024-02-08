@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To-Do Lists</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="img-bg"></div>
+    <div class="card">
+        <div class="card-bg">
+            <div class="items">
+                <div class="btn-parent">
+                    <button type="button" id="addtodo">Add todo</button>
+                </div>
+                <p class="titlet">
+                    TODO
+                </p>
+            </div>
+
+            <div class="todolist">
+            </div>
+        </div>
+    </div>
+    <!-- Overlay Area -->
+    <div class="overlay d-none" id="overlay-t">
+        <div class="ovl-card">
+            <div class="ovl-contents">
+                <label for="ovl-text">Todo Name</label>
+
+                <input type="text" id="ovl-text">
+
+                <label for="ovl-desc">Description</label>
+
+                <textarea name="" id="ovl-desc" cols="30" rows="7"></textarea>
+
+                <label for="ovl-sel">priority</label>
+
+                <select name="" id="ovl-sel">
+                    <option value="!"> ! ( Low Priority )</option>
+                    <option value="!!"> ! ! ( Medium Priority )</option>
+                    <option value="!!!"> ! ! ! ( High Priority )</option>
+                </select>
+
+                <div class="ovl-btn">
+                    <button type="button" id="save">Save</button>
+                </div>
+                <div class="ovl-btn">
+                    <button type="button" id="back">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/add1.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
